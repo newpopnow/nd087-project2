@@ -18,6 +18,7 @@
 | udacity-lb-tf | ALB Load Balancer | NA | One in each zone  |  |
 | udacity-db-cluster | Aurora MySQL DB Cluster | db.t2.small | 2 clusters in 2 regions | geo replication is configured between the cluster in zone1 and zone2, each cluster has 2 nodes in the appropriate AZs |
 | ec2_sg | Security Group | NA | One for each zone | Ensure this security group is identical in each zone in case a failover is needed |
+| Prometheus | Monitoring stack | NA | One for us-east-2 |Collect metrics and visualize data to Grafana dashboard, running on EKS |
 
 ### Descriptions
 | Asset     | Description                                              |
