@@ -19,7 +19,7 @@
 | udacity-db-cluster | Aurora MySQL DB Cluster | db.t2.small | 2 clusters in 2 regions | geo replication is configured between the cluster in zone1 and zone2, each cluster has 2 nodes in the appropriate AZs |
 | ec2_sg | Security Group | NA | One for each zone | Ensure this security group is identical in each zone in case a failover is needed |
 | prometheus | Monitoring stack | NA | One for us-east-2 | NA |
-| udacity | key pairs | NA | One for each region | NA |
+| udacity (EC2 key pair) | EC2 key pair | NA | One for each region | NA |
 | GitHub repo | Repositories | NA | One | NA |
 
 ### Descriptions
@@ -32,7 +32,7 @@
 | udacity-db-cluster (rds) | RDS is an AWS managed database service. Our db cluster is based a postgres database platform and is being used to store our application data | 
 | ec2_sg (Security Group) | AWS Security Groups control inbound and outbound traffic to AWS resources.  This security group will be used to control access to our VPC and EC2 instances to ensure only the proper access is occurring |
 | prometheus | Prometheus is a powerful and flexible monitoring and alerting system that is well-suited for monitoring modern, cloud-native applications. Its ability to collect and analyze metrics, along with its robust alerting capabilities |
-| AWS key-pairs | Used for secure access to Amazon EC2 instances by SSH protocol |
+| udacity (EC2 key pair) | Used for secure access to Amazon EC2 instances by SSH protocol |
 | Github repo | Store and manage the Terraform code, serve as a version control system allow to track changes and collaborate with others |
 
 ## DR Plan
